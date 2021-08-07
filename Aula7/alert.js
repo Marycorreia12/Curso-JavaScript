@@ -19,7 +19,8 @@ num1 = Number(num1);
 num2 = Number(num2);
 const resultado = num1 + num2;
 
-document.getElementById("testePrompt").innerHTML = resultado;
+document.getElementById("testePrompt").innerHTML = `O resultado da sua soma foi ${resultado}`;
 
 //alert
-alert(' O resultado da sua conta foi: ' + resultado);
+const alerta = alert(' O resultado da sua conta foi: ' + resultado);
+
