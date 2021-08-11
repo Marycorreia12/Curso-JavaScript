@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Funções JavaScript</h1>
+    <p>Uma função JavaScript é um bloco de código projetado para executar uma tarefa específica.</p>
+    <p>Uma função JavaScript é definida com a palavra - chave function, seguida por um nome , seguida por parênteses().
+    <p>Os parênteses podem incluir nomes de parâmetros separados por vírgulas. </p>
+    O código a ser executado, pela função, é colocado entre chaves: {}
+    e  será executado quando "algo" invocar (chamar) a função.
+    </p>
+    <p id="demo"></p>
+
+        <script>
+        function myFunction(p1, p2) {
+          return p1 * p2;
+        }
+        document.getElementById("demo").innerHTML = myFunction(4, 3);
+        </script>
+
+        <p>Quando o JavaScript atinge uma instrução return, a função para de ser executada.</p>
+        <p>Variáveis ​​declaradas em uma função JavaScript tornam-se LOCAIS para a função.</p>
+        <p>Variáveis ​​locais só podem ser acessadas de dentro da função.</p>
+
+            // code here can NOT use carName
+
+            function myFunction() {
+            let carName = "Volvo";
+            // code here CAN use carName
+            }
+
+            // code here can NOT use carName
+
+       
+    
+</body>
+</html>
