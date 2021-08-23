@@ -16,11 +16,8 @@ function getNomeMes(numeroMes) {
     }
 
     function criaDate(data) {
-        const diaSemana = data.getDay();
-        const numeroMes = data.getMonth();
-
-        const nomeDia = getDiaSemanaTexto(diaSemana);
-        const nomeMes = getNomeMes(numeroMes);
+        const nomeDia = getDiaSemanaTexto( data.getDay());
+        const nomeMes = getNomeMes(data.getMonth());
 
         return (
             `${nomeDia}, ${data.getDate()} de ${nomeMes}` + 
