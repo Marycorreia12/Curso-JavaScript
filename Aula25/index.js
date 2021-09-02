@@ -1,17 +1,25 @@
-function soma(x, y) {
-    if(typeof x !== 'number' || typeof y !== 'number') {
-        //Lançar um erro
-        throw new Error('x e y precisam ser números.');
-    }
-    return x + y;
-}
-
 //Tratar o erro
 try {
-    console.log(soma(1, 2));
-    console.log(soma('1', 2));
+    console.log('Abrir um arquivo');
+    console.log('Manipulei o arquivo e gerou erro');~
+    console.log('Fechei o arquivo');
+try {
+    console.log(b);
 }
+catch(e){
+    console.log('Deu erro');
+}
+finally {
+    console.log('Também sou finally');
+   }
+}
+
 //Capturar o erro
-catch(error){
-    console.log(error);
+catch(e){
+    //é executada quando há erros
+    console.log('Tratando o erro');
 }
+finally {
+    console.log('FINALLY: Eu sempre sou executado');
+}
+
